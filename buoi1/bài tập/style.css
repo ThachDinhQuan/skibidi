@@ -1,0 +1,28 @@
+.dashboard {
+  display: grid;
+  /* 1. Viết code chia 3 cột tại đây */
+  grid-template-columns: 100px auto 100px;
+  grid-gap: 15px;
+  background-color: #263238;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.item {
+  background-color: #ffb74d;
+  padding: 20px;
+  border: 1px solid #fff;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* 2. Viết CSS để ô Header chiếm hết 3 cột */
+.header {
+  grid-column: 1/4; 
+}
+
+/* 3. Viết CSS để ô Sidebar chiếm 2 hàng dọc */
+.sidebar {
+  grid-row: 2/4;
+}
